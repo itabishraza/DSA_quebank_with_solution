@@ -1,0 +1,28 @@
+package com.tabish.practice;
+
+// Que link here.....
+// https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        int [] arr={4,5,4,4,4};
+        int ans= isSorted(arr);
+        System.out.println(ans);
+    }
+
+
+        public static int isSorted( int []a) {
+            // Write your code here.
+            for (int i = 1; i < a.length; i++) {
+                if(a[i]>=a[i-1]){
+
+                }else{
+                    return 0;
+                }
+            }
+            return 1;
+        }
+
+}
