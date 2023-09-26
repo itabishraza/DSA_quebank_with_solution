@@ -1,0 +1,26 @@
+
+// Que link here.....
+// https://www.codingninjas.com/studio/problems/left-rotate-an-array-by-one_5026278
+
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        int [] arr={3,1,6,5,10,7,6,6,1,7};
+        int[] ans=rotateArray(arr);
+        System.out.println(Arrays.toString(ans));
+
+        }
+
+    static int[] rotateArray(int[] arr) {
+        // Write your code here.
+
+        int temp=arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            arr[i-1]=arr[i];
+        }
+        arr[arr.length-1]=temp;
+        return arr;
+    }
+}
